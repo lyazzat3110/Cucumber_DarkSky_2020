@@ -1,0 +1,101 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 365956763,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on DarkSky Home Page",
+            "match": {
+              "location": "HomePageSD.verificationHomePageTitlte()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4860174185,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify today\u0027s temperature",
+        "description": "",
+        "id": "darksky--feature;verify-today\u0027s-temperature",
+        "after": [
+          {
+            "result": {
+              "duration": 157117740,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3163963246,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Today and expand it",
+            "match": {
+              "location": "HomePageSD.expandTodayLine()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3488870064,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify lowest and highest temp is displayed correctly",
+            "match": {
+              "location": "HomePageSD.showMaxAndMinTemp()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@homePage"
+          }
+        ]
+      }
+    ],
+    "name": "DarkSky  Feature",
+    "description": "",
+    "id": "darksky--feature",
+    "keyword": "Feature",
+    "uri": "HomePage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@darkSky"
+      }
+    ]
+  }
+]
